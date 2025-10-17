@@ -82,9 +82,6 @@ export default function LoginPage() {
                         className="mt-6 w-full"
                     />
 
-                    {/* Links para "Esqueci minha senha", "Lembrar de mim" e "Criar nova conta" */}
-
-
                     <View className="mt-8 flex-row justify-center">
                         <TouchableOpacity>
                             <Text className="text-sm text-gray-500">
