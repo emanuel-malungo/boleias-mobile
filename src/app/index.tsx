@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import icon from '@/assets/images/icon.png';
 import driving from '@/assets/images/driving.png';
 import { View, Text, Image, StatusBar, TouchableOpacity, Dimensions } from 'react-native';
@@ -47,7 +48,10 @@ export default function Index() {
       <TouchableOpacity
         className='bg-[#2586D9] px-6 py-3 rounded-full mt-6 w-full max-w-xs justify-center items-center'
         style={{
-          maxWidth: width * 0.8, // Limita a largura do botão a 80% da tela
+          maxWidth: width * 0.8,
+        }}
+        onPress={() => {
+          router.push('/(auth)');
         }}
       >
         <Text className='text-white text-lg font-medium'>
