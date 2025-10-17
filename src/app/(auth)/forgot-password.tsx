@@ -26,11 +26,11 @@ export default function ForgotPasswordPage() {
                 <View className="items-center">
                     <Image source={icon} className="mb-4" />
                     <Text className="text-2xl font-bold text-center">
-                        Acessa a tua conta
+                        Esqueceste a tua senha?
                     </Text>
                     <Text className="text-base mt-2 text-center">
-                        Preenche os campos abaixo para {'\n'}
-                        aceder à tua conta.
+                        Não te preocupes, vamos ajudar-te {'\n'}
+                        a recuperar o acesso à tua conta.
                     </Text>
                 </View>
 
@@ -51,7 +51,7 @@ export default function ForgotPasswordPage() {
                             />
                         )}
                     />
-                
+
                     <View className="w-full mt-4 flex-row justify-between">
                         <View></View>
                         <TouchableOpacity>
