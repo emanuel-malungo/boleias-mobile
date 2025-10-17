@@ -1,11 +1,11 @@
-import { View, Text, ImageBackground, StatusBar, Image, TouchableOpacity } from "react-native";
-import background from "@/assets/images/backgroud-auth.png";
 import icon from "@/assets/images/icon.png";
-import { useForm, Controller } from "react-hook-form";
-import { forgotPasswordSchema } from "@/validation/authValidation";
-import { yupResolver } from "@hookform/resolvers/yup";
-import Button from "@/components/common/Button";
 import Input from "@/components/common/Input";
+import Button from "@/components/common/Button";
+import { useForm, Controller } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import background from "@/assets/images/backgroud-auth.png";
+import { forgotPasswordSchema } from "@/validation/authValidation";
+import { View, Text, ImageBackground, StatusBar, Image, TouchableOpacity } from "react-native";
 
 export default function ForgotPasswordPage() {
 
@@ -66,13 +66,10 @@ export default function ForgotPasswordPage() {
                     />
 
                     <View className="mt-8 flex-row justify-center">
-                        <TouchableOpacity>
-                            <Text className="text-sm text-gray-500">
-                                Ainda não tens conta? <Text className="text-[#2586D9] font-bold">Cria uma</Text>
-                            </Text>
+                     <TouchableOpacity>
+                            <Text className="text-[#2586D9] font-bold">{'<- Voltar para login'}</Text>
                         </TouchableOpacity>
                     </View>
-
                 </View>
             </View>
         </ImageBackground>

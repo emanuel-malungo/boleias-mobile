@@ -1,12 +1,12 @@
-import { View, Text, ImageBackground, StatusBar, Image, TouchableOpacity } from "react-native";
-import background from "@/assets/images/backgroud-auth.png";
-import icon from "@/assets/images/icon.png";
-import { useForm, Controller } from "react-hook-form";
-import { loginSchema } from "@/validation/authValidation";
-import { yupResolver } from "@hookform/resolvers/yup";
-import Button from "@/components/common/Button";
-import Input from "@/components/common/Input";
 import { router } from "expo-router";
+import icon from "@/assets/images/icon.png";
+import Input from "@/components/common/Input";
+import Button from "@/components/common/Button";
+import { useForm, Controller } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { loginSchema } from "@/validation/authValidation";
+import background from "@/assets/images/backgroud-auth.png";
+import { View, Text, ImageBackground, StatusBar, Image, TouchableOpacity } from "react-native";
 
 export default function LoginPage() {
     const {
@@ -83,7 +83,9 @@ export default function LoginPage() {
                     />
 
                     <View className="mt-8 flex-row justify-center">
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => router.push('/(auth)/register')}
+                        >
                             <Text className="text-sm text-gray-500">
                                 Ainda não tens conta? <Text className="text-[#2586D9] font-bold">Cria uma</Text>
                             </Text>
