@@ -6,6 +6,7 @@ import { loginSchema } from "@/validation/authValidation";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Button from "@/components/common/Button";
 import Input from "@/components/common/Input";
+import { router } from "expo-router";
 
 export default function LoginPage() {
     const {
@@ -68,7 +69,9 @@ export default function LoginPage() {
                     />
                     <View className="w-full mt-4 flex-row justify-between">
                         <View></View>
-                        <TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => router.push('/(auth)/forgot-password')}
+                        >
                             <Text className="text-sm text-[#2586D9]">Esqueceste a tua senha?</Text>
                         </TouchableOpacity>
                     </View>
